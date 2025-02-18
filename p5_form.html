@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title> Form </title> 
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+
+</head> 
+<body>
+    <nav style='background-color:red; text-align:center; font-weight:bold;'>
+        <a href='p1_aboutme.html'> About me </a> &nbsp &nbsp &nbsp
+        <a href='p2_hobby.html'> Hobby </a> &nbsp &nbsp &nbsp
+        <a href='p3_portfolio.html'> Portfolio </a> &nbsp &nbsp &nbsp
+        <a href='p4_favorites.html'> Favorites </a> &nbsp &nbsp &nbsp
+		<a href='p5_form.html'> Form </a> &nbsp &nbsp &nbsp
+    </nav>
+
+<h1 style='text-align:center;'> My Contact Form </h1> 
+<h2 style='text-align:center;'> This is a way to contact me </h2>
+
+    <form>
+        <label> First Name: <input type='text'> </label> <br> <br>
+        <label> Last Name: <input type='text'> </label> <br> <br>
+        
+        <p> <b> Best Way of Contact </b> </p> <br>
+        
+        <label> What do you prefer? </label> &nbsp &nbsp &nbsp
+        
+        <select> 
+                <option> Phone Call </option>
+                <option> Video Call </option> 
+                <option> Email </option>
+                <option> SMS </option> 
+                <option> In Person </option>
+        </select>
+        
+    <br> <br> <br>
+        
+    <!-- Radio Type Menu -->
+        <fieldset> 
+            <legend> Which office is closest to you? (Choose one) </legend>
+                <input type='radio'>
+                    <label> Chicago - Northside </label> <br>
+                <input type='radio'> 
+                    <label> Chicago - Southside </label> <br>
+                <input type='radio'> 
+                    <label> Chicago - Westside </label> <br>
+                <input type='radio'> 
+                    <label> Chicago - Downtown </label>
+            
+            
+        </fieldset> <br> <br>
+            
+            <label> Date of visit: </label>
+                <input type='date'> <br> <br>             
+            
+            
+            <label> Time of appointment: </label>
+                <input type='time'> <br> <br> 
+
+            <label> Attach your business plan/resume:</label>
+            <br> <br>    <input type='file'> <br> <br> 
+            
+            <label> Attach your business card:</label>
+            <br> <br>    <input type='file'> <br> <br> 
+			
+			
+			<!--Input a Number-->
+			<label> How long do you want to meet for: </label>
+				<input type="number" min="1" max="40"> Minutes<br><br>
+				
+			<!--Input a color type-->
+			<label> Select your favorite color swag: </label>
+				<input type="color"> <br> <br>
+				
+				
+			<!--Make two labels to get phone number and email-->
+			
+			<label>Enter Phone Number:</label><br>
+				<input type="tel" placeholder="123-456-7890" pattern="[0,9]{3}.[0,9]{3}.[0,9]{4}" required><br><br>
+				<select> 
+                <option>Cell </option>
+                <option>Home </option> 
+                <option>Work</option>
+              
+			</select><br><br>
+			<label>Enter Email:</label><br>
+				<input type="email" placeholder="username@gmail.com"><br><br>
+				
+				
+			<!-- Creating a sumbit and reset button-->
+			<input type="submit" value="Submit">&nbsp &nbsp &nbsp
+			<input type="reset" value="Reset">
+			
+				
+				
+			</form>
+			
+			
+			
+			
+			
+</body>
+</html>

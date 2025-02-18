@@ -1,0 +1,104 @@
+<!Doctype HTML>
+<html>
+
+<head>
+    <title> Portfolio </title>
+</head>
+<!--this is my portfolio and i am using css to enhcance it -->
+<body>
+    <nav style='background-color:red; text-align:center; finr-weight; bold;'>
+    <a href=' p1_aboutme.html'> About me </a> &nbsp &nbsp &nbsp
+        <a href=' p2_hobby.html'> hobby </a> &nbsp &nbsp &nbsp
+        <a href=' p3_portfolio.html'> Portfolio </a> &nbsp &nbsp &nbsp
+        <a href=' p4_favorites.html'> Favorites </a> &nbsp &nbsp &nbsp
+        <a href=' p5_form.html'> Form </a> &nbsp &nbsp &nbsp
+    </nav>
+<h1> This is my third page - My Portfolio </h1>
+
+<style>
+body {
+    background-color: pink;
+    padding: 20px;
+    font-family: Arial;
+    }
+.main{
+    max-width:1000px;
+    margin:auto;
+    }
+*{
+    box-sizing: border-box;
+    }
+.row{
+    margin: 8px-16px;
+    }
+.column{
+        float:left;
+        width:25%;
+.row, .row>.column{
+    padding:8px;
+    }
+.content{
+    background-color:red;
+    color:yellow;
+    padding: 10px;
+    }
+    @media screen and (max-width:900px) {
+    .column {width:50%;}
+    }   
+@media screen and (max-width:600px) {
+    .column {width:100%;}
+    }
+    
+    .row:after{
+    content: '';
+    display: table;
+    clear:both;
+    }
+</style>
+
+
+<!--portfolio gallery grid-->
+    <div class='row'>
+        <div class='column'>
+            <div class='content'>
+                <img src='pr.jfif' alt='Puerto Rico' height='300' width='200'
+                style="width:100%">
+                <h3>Dream Vacation</h3> 
+                <p>I would love to go to Puerto Rico.  </p>
+            </div>
+        </div>
+        <div class='column'>
+            <div class='content'>            
+                <img src='butterfly.jfif' alt='Butterfly House' height='auto' width='auto'
+                style="width:100%">
+                <h3>Dream Place  </h3> 
+                <p>I want to go to a Butterfly House. </p>
+            </div>
+        </div>
+        <div class='column'>
+            <div class='content'>        
+                <img src='job.jpg' alt='Job' height='auto' width='auto'
+                style="width:100%">
+                <h3>Dream Job</h3> 
+                <p>My dream job is to be a sonopragher.  </p>
+            </div>
+        </div>
+        <div class='column'>
+            <div class='content'>        
+                <img src='fox.jpg' alt='Fox' height='auto' width='auto'
+                style="width:100%">
+                <h3>Dream Pet  </h3> 
+                <p>My dream pet is a fox. </p>
+            </div>
+        </div>
+        <div class='column'>
+            <div class='content'>
+                <img src='color.jpg' alt='Dark red' height='auto' width='auto'
+                style="width:100%">
+                <h3>Favorite Color  </h3> 
+                <p>I love dark red.  </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

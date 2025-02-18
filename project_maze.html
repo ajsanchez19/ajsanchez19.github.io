@@ -1,0 +1,135 @@
+<!DOCTYPE Html>
+<html>
+<head></head>
+<style>
+canvas {
+    position: absolute;
+    top:150;
+    left 150;
+    }
+</style>
+<body>
+<h1>Maze Project</h1>
+    <canvas id='path' width='500' height='500' style='border:1px solid grey;'></canvas>
+    <script>
+    const canvas = document.getElementById("path");
+    const ctx = canvas.getContext("2d");
+//1st line
+    ctx.beginPath();
+    ctx.moveTo(0,0);
+    ctx.lineTo(0,500)
+    ctx.stroke();
+//2nd line
+    ctx.beginPath();
+    ctx.moveTo(500,500);
+    ctx.lineTo(0,500)
+    ctx.stroke();
+//3rd line
+    ctx.beginPath();
+    ctx.moveTo(50,400);
+    ctx.lineTo(50,500)
+    ctx.stroke();
+//4th line
+    ctx.beginPath();
+    ctx.moveTo(0,250);
+    ctx.lineTo(100,250)
+    ctx.stroke();
+//5th line
+    ctx.beginPath();
+    ctx.moveTo(100,150);
+    ctx.lineTo(200,150)
+    ctx.stroke();
+//6th line
+    ctx.beginPath();
+    ctx.moveTo(100,150);
+    ctx.lineTo(100,250)
+    ctx.stroke();
+//7th line
+    ctx.beginPath();
+    ctx.moveTo(100,100);
+    ctx.lineTo(100,0)
+    ctx.stroke();
+//8th line
+    ctx.beginPath();
+    ctx.moveTo(100,100);
+    ctx.lineTo(200,100)
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(200,350);
+    ctx.lineTo(50,350)
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(100,400);
+    ctx.lineTo(100,350)
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(200,400);
+    ctx.lineTo(200,350)
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(400,400);
+    ctx.lineTo(200,400)
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(400,400);
+    ctx.lineTo(400,500)
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(400,0);
+    ctx.lineTo(400,100)
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(250,0);
+    ctx.lineTo(250,100)
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(250,50);
+    ctx.lineTo(300,50)
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(350,100);
+    ctx.lineTo(350,200)
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(300,200);
+    ctx.lineTo(500,200)
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(300,200);
+    ctx.lineTo(300,300)
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(250,200);
+    ctx.lineTo(250,300)
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(300,300);
+    ctx.lineTo(250,300)
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(450,300);
+    ctx.lineTo(450,200)
+    ctx.stroke();
+</script>
+
+<svg width='600' height='600'>
+            <g>
+                <circle cx='50' cy='50' r='10' stroke='red' fill='yellow'> </circle>
+                <animateMotion path='M 0 0 V 80 H 180 V 300 H 400 v 130 h 75 z '    dur='5s' repeatCount='1' />
+                    </g>
+</body>
+</html>
